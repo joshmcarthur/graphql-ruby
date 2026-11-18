@@ -516,6 +516,8 @@
 
 
 
+            <pre class="method-type-signature"><code>(Module[untyped] child_class) &rarr; void</code></pre>
+
           </div>
 
 
@@ -529,12 +531,9 @@
 
 
           <div class="method-source-code" id="extended-source">
-            <pre class="ruby"><span class="ruby-comment"># File lib/graphql/schema/member/has_authorization.rb, line 12</span>
+            <pre class="ruby"><span class="ruby-comment"># File lib/graphql/schema/member/has_authorization.rb, line 14</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">extended</span>(<span class="ruby-identifier">child_class</span>)
   <span class="ruby-identifier">child_class</span>.<span class="ruby-identifier">extend</span>(<span class="ruby-constant">ClassConfigured</span>)
-  <span class="ruby-identifier">child_class</span>.<span class="ruby-identifier">class_exec</span> <span class="ruby-keyword">do</span>
-    <span class="ruby-ivar">@authorizes</span> = <span class="ruby-keyword">false</span>
-  <span class="ruby-keyword">end</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
 
@@ -569,6 +568,8 @@
 
 
 
+            <pre class="method-type-signature"><code>(Module[untyped] child_class) &rarr; void</code></pre>
+
           </div>
 
 
@@ -582,7 +583,7 @@
 
 
           <div class="method-source-code" id="included-source">
-            <pre class="ruby"><span class="ruby-comment"># File lib/graphql/schema/member/has_authorization.rb, line 8</span>
+            <pre class="ruby"><span class="ruby-comment"># File lib/graphql/schema/member/has_authorization.rb, line 9</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">included</span>(<span class="ruby-identifier">child_class</span>)
   <span class="ruby-identifier">child_class</span>.<span class="ruby-identifier">include</span>(<span class="ruby-constant">InstanceConfigured</span>)
 <span class="ruby-keyword">end</span></pre>
@@ -632,6 +633,8 @@
               </div>
 
 
+
+            <pre class="method-type-signature"><code>(untyped object, <a href="../../Query/Context.html" class="rbs-type">GraphQL::Query::Context</a> context) &rarr; bool</code></pre>
 
           </div>
 
